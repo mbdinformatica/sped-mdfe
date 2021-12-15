@@ -408,6 +408,7 @@ class Make
         if ($this->infDoc) {
             $this->dom->appChild($this->infMDFe, $this->infDoc, 'Falta tag "infDoc"');
             if ($this->infMunDescarga) {
+                //TODO: refazer
                 foreach ($this->infMunDescarga as $key => $value) {
                     $this->dom->appChild($this->infDoc, $value, 'Falta tag "infMunDescarga"');
                     if (isset($this->infCTe[$key])) {
